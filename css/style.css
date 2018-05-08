@@ -23,7 +23,8 @@ header {
 	display: -ms-grid;
 	margin: 1% 15%;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 30% 70%;
+
 }
 
 .logo {
@@ -39,6 +40,7 @@ header {
 	margin-top: 20px;
 	display: grid;
 	justify-items: end;
+	margin-left: 7%;
 }
 
 li {
@@ -48,10 +50,10 @@ li {
 
 .navb a {
 	color: white;
-	/* border: 1px solid #fff; */
 	padding: 5px 25px;
 	border-radius: 30px;
 	-webkit-transition: color 0.5s ease;
+	-webkit-transition: color 0.5s, background 0.5s;
 	transition: color 0.5s, background 0.5s;
 }
 
@@ -66,12 +68,61 @@ li {
 	background-repeat: no-repeat;
 	/* background-position: center; */
 	height: 89%;
+	display: grid;
+	grid-template-columns: 60% 40%;
 }
 
 .features {
 	height: 100vh;
 }
 
+.leftSide {
+	margin-left: 18%;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+} 
+
+.leftSide #AppIcon {
+	margin-top: 22%;
+	width: 85px;
+}
+
+.helpsyou {
+	font-size: 63px;
+	font-weight: 100;
+	margin-top: 4%;
+	letter-spacing: 2px;
+}
+
+#bet {
+	font-weight: bold;
+}
+
+.FitAppIs {
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: lighter;
+	line-height: 1.78;
+}
+
+.downicon {
+	margin-top: 65px;
+}
+
+.downicon .Apps {
+	width: 115px;
+	margin-right: 23px;
+}
+
+.downicon .Goop {
+	width: 121px;
+}
+
+#iPh5 {
+	height: 79%;
+	position: absolute;
+	bottom: 0;
+}
 
 @media (max-width: 1300px) {
 	.navb {
