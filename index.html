@@ -17,6 +17,11 @@
 			<div>
 				<i class="logo">FitApp</i>
 			</div>
+			<div class="section">
+				<a href="#" class="menu_btn">
+					<span class="line_burg"></span>
+				</a>
+			</div>
 			<nav>
 				<ul class="navb">
 					<li>
@@ -38,11 +43,6 @@
 						<a href="#">Get App</a>
 					</li>
 				</ul>
-				<div class="hamb">
-					<div class="burger_butt1"></div>
-					<div class="burger_butt2"></div>
-					<div class="burger_butt3"></div>
-				</div>
 			</nav>
 		</div>
 		<div class="home">
@@ -76,17 +76,14 @@
 	<div class="features">
 		<div class="ls_feat">
 			<img src="img/iPh.png" alt="" id="iph_feat">
-			</section>
-
 		</div>
 		<div class="rs_feat">
 			<span class="bc">Best calorie
 				<span class="bci">counter app!</span>
 			</span>
 			<br>
-			<span class="bc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-				<br> sed do eiusmod tempor incididunt ut labore et dolore
-				<br> magna aliqua. Ut enim ad minim veniam.</span>
+			<span class="bc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam.</span>
 		</div>
 	</div>
 	<div class="simp_way">
@@ -117,7 +114,7 @@
 		</div>
 		<div class="mt_right">
 			<div class="prod">
-				<img src="img/prod1.png" alt="">
+				<img src="img/prod1.png" alt="" id="prod1">
 				<span class="prod_card">
 					<span class="meal">Apple</span>
 					<br>
@@ -168,29 +165,28 @@
 	</div>
 	<footer>
 		<!-- <div class="foot_content"> -->
-		<div class="foot_txt foot_one">Download, customize &
+		<div class="foot_one">Download, customize &
 			<span class="foot_bold">enjoy!</span>
 		</div>
 		<br>
-		<div class="foot_txt foot_two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+		<div class="foot_two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 			<br> dolore magna aliqua. Ut enim ad minim veniam.
 		</div>
 		<br>
 		<div>
-			<a href="#" class="foot_txt foot_link">Get app</a>
+			<a href="#" class="foot_link">Get app</a>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	    crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		// $(document).ready(function(){
-		// 	$('.hamb').click(function(){
-		// 		$('.hamb').toggleClass('active');
-		// 	});
-		// 	$('.navb').click(function(){
-		// 		$('.navb').toggleClass('active_navb');
-		// 	});
-		// });
+		$('.menu_btn').on('click', function (e) {
+			e.preventDefault;
+			$(this).toggleClass('menu_btn_active');
+			$('.navb').toggleClass('navb_active');
+			$('#AppIcon').toggleClass('AppIcon_Active');
+			$('.home').toggleClass('home_active');
+		});
 	</script>
 </body>
 
