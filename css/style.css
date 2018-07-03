@@ -410,6 +410,7 @@ footer {
 /*====================== Адаптив ======================*/
 
 @media (min-width: 0) and (max-width: 320px) {
+
 	.section {
 		margin-top: 4px;
 	}
@@ -540,6 +541,8 @@ footer {
 	}
 	.home_active {
 		background-image: none;
+		display: none;
+		height: 0;
 	}
 	.manage_time {
 		/* text-align: center */
@@ -620,6 +623,10 @@ footer {
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
+	.leftSideActive {
+		display: none;
+		height: 0;
+	}
 	.section {
 		margin-top: 4px;
 	}
@@ -715,8 +722,8 @@ footer {
 		display: grid;
 		grid-template-columns: 100%;
 		margin: 2% 7%;
-		padding: 15% 0;
-		height: 100%;
+		padding: 0 0 5% 0;
+		height: 400px;
 		text-align: center;
 	}
 	.ls_feat {
@@ -742,7 +749,7 @@ footer {
 		background-position: center bottom;
 		background-size: 150%;
 		background-repeat: no-repeat;
-		height: 80vh;
+		height: 400px;
 	}
 	#sw_bg_png {
 		-webkit-transform: translateY(70px);
@@ -753,11 +760,13 @@ footer {
 	}
 	.home_active {
 		background-image: none;
+		display: none;
+		height: 0;
 	}
 	.manage_time {
 		display: grid;
 		grid-template-columns: 100%;
-		height: 100vh;
+		height: 450px;
 	}
 	.prod {
 		width: 200px;
@@ -834,6 +843,10 @@ footer {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+	header {
+		height: 355px;
+	}
+	
 	#iPh5 {
 		display: none;
 	}
@@ -888,10 +901,15 @@ footer {
 		width: 117px;
 	}
 	.features {
-		grid-template-columns: 60% 40%;
-		margin: 0 6%;
+		height: 350px;
+		grid-template-columns: 100%;
+		margin: 2% 7%;
+		padding: 0 0 5% 0;
+		text-align: center;
+		/* margin: 0 6%; */
 	}
 	.ls_feat img {
+		margin: 3% 0;
 		height: 250px;
 	}
 	.bc {
@@ -902,7 +920,7 @@ footer {
 		font-size: 12px;
 	}
 	.simp_way {
-		height: 90vh;
+		height: 400px;
 	}
 	.txt_sw {
 		padding-top: 20px;
@@ -914,7 +932,7 @@ footer {
 	}
 	.manage_time {
 		grid-template-columns: 42% 58%;
-		height: 90vh;
+		height: 400px;
 	}
 	.mt_left {
 		margin-left: 10%;
@@ -971,7 +989,7 @@ footer {
 		width: 95%;
 	}
 	footer {
-		height: 70vh;
+		height: 220px;
 		background-color: #2ecc71;
 		background-image: url(../img/footer_bg.png);
 		background-position: center bottom;
@@ -1011,5 +1029,319 @@ footer {
 	}
 	.foot_bold {
 		font-weight: bolder;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	header {
+		/* height: 750px; */
+	}
+	.navb-logo {
+		margin: 2% 2%;
+		grid-template-columns: 20% 80%;
+	}
+	.logo {
+		font-size: 34px;
+	}
+	.navb {
+		margin-left: 3%;
+	}
+	li {
+		font-size: 14px;
+	}
+	.navb a {
+		padding: 5px 20px;
+	}
+	.home {
+		background-image: url("../img/home-back.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 89%;
+		display: grid;
+		grid-template-columns: 60% 40%;
+	}
+	#strbrr {
+		display: none;
+	}
+	.leftSide {
+		margin-left: 5%;
+		margin-top: 9%;
+	}
+	.leftSide #AppIcon {
+		margin-top: 7%;
+		width: 85px;
+	}
+	.helpsyou {
+		font-size: 36px;
+		font-weight: 100;
+		margin-top: 10%;
+		letter-spacing: 2px;
+	}
+	.FitAppIs {
+		margin-top: 10px;
+		font-size: 12px;
+		font-weight: lighter;
+		line-height: 1.78;
+	}
+	.downicon {
+		margin-top: 80px;
+	}
+	.downicon .Apps {
+		width: 115px;
+		margin-right: 23px;
+	}
+	.downicon .Goop {
+		width: 121px;
+	}
+	#iPh5 {
+		height: 500px;
+	}
+	.features {
+		display: grid;
+		grid-template-columns: 100%;
+		margin: 0 12%;
+		height: 80%;
+	}
+	.ls_feat img {
+		display: block;
+		margin: 5% auto;
+		height: 400px;
+	}
+	.rs_feat {
+		text-align: center;
+		padding-bottom: 5%;
+	}
+	.bc {
+		font-size: 40px;
+	}
+	.simp_way {
+		font-family: 'Roboto', sans-serif;
+		height: 500px;
+		background: #f9f9f9;
+		background-image: url(../img/iph_sw.png);
+		background-position: center bottom;
+		background-size: 130%;
+		background-repeat: no-repeat;
+	}
+	.txt_sw {
+		text-align: center;
+		padding-top: 50px;
+		line-height: 1.5;
+	}
+	#sw_bg_png {
+		width: 92%;
+		display: block;
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+		margin: 0 auto 0 auto;
+	}
+	.manage_time {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		height: 520px;
+	}
+	.mt_left {
+		margin-left: 5%;
+	}
+	.prod {
+		width: 280px;
+		height: 80px;
+		margin: 4% 0;
+		padding: 0 8px;
+	}
+	.meal {
+		color: #2ecc71;
+		font-size: 12px;
+		font-weight: bolder;
+	}
+	.descript {
+		color: #5a5a5a;
+		font-size: 10px;
+		font-weight: lighter;
+	}
+	.cal_cont {
+		color: #2ecc71;
+		font-size: 10px;
+		font-weight: bolder;
+	}
+	.alarm_clock {
+		text-align: end;
+		font-weight: bolder;
+		margin: auto 0;
+		line-height: 0.9;
+	}
+	.time {
+		color: #b4b4b4;
+		font-size: 16px;
+	}
+	.pm {
+		color: #b4b4b4;
+		font-size: 14px;
+		padding-right: 5px;
+	}
+	.time_green {
+		color: #2ecc71;
+	}
+	#prod1 {
+		width: 90%;
+		margin: auto 0;
+	}
+	#prod2 {
+		width: 85%;
+		margin: auto 0;
+	}
+	#prod3 {
+		width: 95%;
+		margin: auto 0;
+	}
+	footer {
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		height: 280px;
+		background-color: #2ecc71;
+		background-image: url(../img/footer_bg.png);
+		background-position: center bottom;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		padding: 6vh 0 0 0;
+		margin: auto 0;
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+	header {
+		background-color: #2ecc71;
+		width: 100%;
+		height: 100vh;
+		display: inline-block;
+	}
+	.navb-logo {
+		display: -ms-grid;
+		margin: 1% 5%;
+		display: grid;
+		grid-template-columns: 20% 80%;
+	}
+	.logo {
+		font-size: 38px;
+		font-weight: bold;
+		color: #fff;
+		font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	}
+	.navb {
+		grid-template-columns: repeat(6, auto);
+		margin-top: 22px;
+		display: grid;
+		justify-items: center;
+		width: 90%;
+		margin-left: 5%;
+	}
+	li {
+		font-size: 13px;
+		font-family: 'Roboto', sans-serif;
+	}
+	.leftSide {
+		margin-left: 9%;
+		margin-top: 7%;
+		font-family: 'Roboto', sans-serif;
+		color: #fff;
+	}
+	.helpsyou {
+		font-size: 50px;
+		font-weight: 100;
+		margin-top: 4%;
+		letter-spacing: 2px;
+	}
+	#bet {
+		font-weight: bold;
+	}
+	.FitAppIs {
+		margin-top: 10px;
+		font-size: 14px;
+		font-weight: lighter;
+		line-height: 1.78;
+	}
+	.downicon {
+		margin-top: 65px;
+	}
+	.downicon .Apps {
+		width: 115px;
+		margin-right: 23px;
+	}
+	.downicon .Goop {
+		width: 121px;
+	}
+	#strbrr {
+		display: none;
+	}
+	#iPh5 {
+		height: 500px;
+		position: absolute;
+		bottom: -1px;
+	}
+	.features {
+		margin: 0 7%;
+		height: 600px;
+		justify-items: center;
+	}
+	.ls_feat img {
+		height: 500px;
+	}
+	.bc {
+		font-size: 44px;
+	}
+	.bc2 {
+		font-size: 16px;
+	}
+	.simp_way {
+		height: 650px;
+	}
+	#prod2 {
+		width: 85%;
+	}
+	#prod3 {
+		width: 95%;
+	}
+	footer {
+		height: 250px;
+	}
+	.foot_one {
+		margin: 7px 0;
+	}
+	.foot_two {
+		margin: 5px 0;
+	}
+	.foot_link {
+
+		margin: 7px 0;
+	}
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+	.navb-logo {
+		margin: 1% 8%;
+		grid-template-columns: 25% 75%;
+	}
+	.logo {
+		font-size: 38px;
+	}
+	.navb {
+		margin-top: 22px;
+	}
+	li {
+		font-size: 15px;
+		font-family: 'Roboto', sans-serif;
+	}
+	.leftSide {
+		margin-left: 14%;
+		margin-top: 7%;
+	}
+	.features {
+		grid-template-columns: 55% 45%;
+		margin: 0 7%;
+	}
+	.bc {
+		font-size: 44px;
 	}
 }
