@@ -125,7 +125,7 @@ li {
 }
 
 #iPh5 {
-	height: 600px;
+	height: 70%;
 	position: absolute;
 	bottom: -1px;
 }
@@ -343,7 +343,6 @@ footer {
 .foot_bold {
 	font-weight: bolder;
 }
-
 /*====================== Гамбургер ======================*/
 
 .section {
@@ -410,12 +409,14 @@ footer {
 /*====================== Адаптив ======================*/
 
 @media (min-width: 0) and (max-width: 320px) {
-
+	.active_link {
+		overflow-y: hidden;
+	}
 	.section {
 		margin-top: 4px;
 	}
 	header {
-		height: 100vh;
+		height: 100%;
 	}
 	.logo {
 		margin: 15px;
@@ -507,7 +508,8 @@ footer {
 		display: grid;
 		grid-template-columns: 100%;
 		margin: 0 7%;
-		height: 100vh;
+		height: 100%;
+		padding: 5% 0;
 		text-align: center;
 	}
 	.ls_feat img {
@@ -530,7 +532,7 @@ footer {
 		background-position: center bottom;
 		background-size: 150%;
 		background-repeat: no-repeat;
-		height: 80vh;
+		height: 320px;
 	}
 	#sw_bg_png {
 		-webkit-transform: translateY(70px);
@@ -548,7 +550,9 @@ footer {
 		/* text-align: center */
 		display: grid;
 		grid-template-columns: 100%;
-		height: 100vh;
+		height: 100%;
+		padding: 5% 0;
+		margin: 5% 0;
 	}
 	.prod {
 		width: 200px;
@@ -611,7 +615,9 @@ footer {
 		font-size: 18px;
 	}
 	footer {
-		height: 55vh;
+		height: 100%;
+		padding: 5% 0 7% 0;
+
 	}
 	.foot_two {
 		font-size: 14px;
@@ -623,6 +629,9 @@ footer {
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
+	.active_link {
+		overflow-y: hidden;
+	}
 	.leftSideActive {
 		display: none;
 		height: 0;
@@ -631,7 +640,7 @@ footer {
 		margin-top: 4px;
 	}
 	header {
-		height: 100vh;
+		height: 100%;
 	}
 	.logo {
 		margin: 15px;
@@ -723,7 +732,7 @@ footer {
 		grid-template-columns: 100%;
 		margin: 2% 7%;
 		padding: 0 0 5% 0;
-		height: 400px;
+		height: 100%;
 		text-align: center;
 	}
 	.ls_feat {
@@ -749,7 +758,7 @@ footer {
 		background-position: center bottom;
 		background-size: 150%;
 		background-repeat: no-repeat;
-		height: 400px;
+		height: 320px;
 	}
 	#sw_bg_png {
 		-webkit-transform: translateY(70px);
@@ -766,7 +775,8 @@ footer {
 	.manage_time {
 		display: grid;
 		grid-template-columns: 100%;
-		height: 450px;
+		height: 100%;
+		padding: 5% 0;
 	}
 	.prod {
 		width: 200px;
@@ -830,10 +840,11 @@ footer {
 		padding: 0 10px;
 	}
 	footer {
-		height: 250px;
+		height: 100%;
+		padding: 5% 0 7% 0;
 	}
 	.foot_two {
-		padding: 0 10px;
+		padding: 0 5px;
 		font-size: 14px;
 	}
 	.foot_link {
@@ -1033,9 +1044,7 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-	header {
-		/* height: 750px; */
-	}
+
 	.navb-logo {
 		margin: 2% 2%;
 		grid-template-columns: 20% 80%;
@@ -1084,7 +1093,7 @@ footer {
 		line-height: 1.78;
 	}
 	.downicon {
-		margin-top: 80px;
+		margin-top: 5%
 	}
 	.downicon .Apps {
 		width: 115px;
@@ -1094,7 +1103,7 @@ footer {
 		width: 121px;
 	}
 	#iPh5 {
-		height: 500px;
+		height: 70%;
 	}
 	.features {
 		display: grid;
